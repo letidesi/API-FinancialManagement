@@ -4,8 +4,7 @@
   "description": "Aprendendo sobre o TDD",
   "main": "index.js",
   "scripts": {
-    "test": "rm -rf .env && cat .env.test >> .env && npx jest --colors --detectOpenHandles --config=jest.config.js",
-    "dev": "rm -rf .env && cat .env.dev >> .env && nodemon server.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,8 +19,5 @@
   "homepage": "https://github.com/letidesi/API-FinancialManagement#readme",
   "devDependencies": {
     "jest": "^27.5.1"
-  },
-  "dependencies": {
-    "nodemon": "^2.0.15"
   }
 }
