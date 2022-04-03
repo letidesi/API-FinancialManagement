@@ -1,0 +1,20 @@
+{
+  "name": "api-financialmanagement",
+  "version": "1.0.0",
+  "description": "Aprendendo sobre o TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letidesi/API-FinancialManagement.git"
+  },
+  "keywords": [],
+  "author": "Letícia Desiderio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letidesi/API-FinancialManagement/issues"
+  },
+  "homepage": "https://github.com/letidesi/API-FinancialManagement#readme"
+}
