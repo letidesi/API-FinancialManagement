@@ -2,9 +2,11 @@
   "name": "api-financialmanagement",
   "version": "1.0.0",
   "description": "Aprendendo sobre o TDD",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "start": "node src/server.js",
+    "test": "jest",
+    "secure-mode": "jest --watchAll --verbose=true"
   },
   "repository": {
     "type": "git",
