@@ -1,20 +1,16 @@
 const app = require('express')();
-const consign = require('consign');
 
-consign({ verbose: false }).include('src/config/middlewares.js').into(app);
+ const consign = require('consign');
 
-app.get('/', (req, res) => {
-    res.status(200).send();
-});
 
-app.get('/users', (req, res) => {
-    const users = [{ name: "Luana Schotte", email: "lua@gmail.com" }];
-    
-    res.status(200).json(users);
-});
+consign({ cwd: 'src', verbose: false })
+    .include('./config/middlewares.js')
+    .include('./routes')
+    .then('./config/routes.js')
+    .into(app); 
 
-app.post('/users', (req, res) => {
-    res.status(201).json(req.body);
-});
+    app.get('/', (req, res) => {
+         res.status(200).send();
+    });
 
 module.exports = app;
