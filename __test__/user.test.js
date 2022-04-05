@@ -8,5 +8,4 @@ test('Deve listar todos os usuários', () => {
         expect(res.body).toHaveLength(1);
         expect(res.body[0]).toHaveProperty('name', 'Luana Schotte');
     });
-
 });
