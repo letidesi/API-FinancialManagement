@@ -1,15 +1,46 @@
+// Update with your config settings.
+
+/**
+ * @type { Object.<string, import("knex").Knex.Config> }
+ */
 module.exports = {
-    test: {
-        client: 'pg',
-        version: '27.5.1',
-        connection: {
-            host: 'localhost',
-            user: 'postgres',
-            'password': 'leticiadesiderio',
-            database: 'financial',
-        },
-        migrations: {
-            directory: 'src/migrations',
-        },
+
+  development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './dev.sqlite3'
+    }
+  },
+
+  staging: {
+    client: 'postgresql',
+    connection: {
+      database: 'financial',
+      user:     'postgres',
+      password: 'leticiadesiderio'
     },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  },
+
+  production: {
+    client: 'postgresql',
+    connection: {
+      database: 'financial',
+      user:     'postgres',
+      password: 'leticiadesiderio'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  },
 };
