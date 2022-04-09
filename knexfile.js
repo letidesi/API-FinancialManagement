@@ -12,12 +12,13 @@ module.exports = {
     }
   },
 
-  staging: {
+  development: {
     client: 'postgresql',
     connection: {
       database: 'financial',
       user:     'postgres',
-      password: 'leticiadesiderio'
+      password: 'leticiadesiderio',
+      port: '5432',
     },
     pool: {
       min: 2,
@@ -33,7 +34,8 @@ module.exports = {
     connection: {
       database: 'financial',
       user:     'postgres',
-      password: 'leticiadesiderio'
+      password: 'letidesiderio',
+      port: '5432',
     },
     pool: {
       min: 2,
@@ -42,5 +44,6 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
-  },
+  }
+
 };
