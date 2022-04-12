@@ -12,11 +12,11 @@ module.exports = {
     }
   },
 
-  development: {
+  test: {
     client: 'postgresql',
     connection: {
       database: 'financial',
-      user:     'postgres',
+      user: 'postgres',
       password: 'leticiadesiderio',
       port: '5432',
     },
@@ -33,7 +33,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'financial',
-      user:     'postgres',
+      user: 'postgres',
       password: 'letidesiderio',
       port: '5432',
     },
