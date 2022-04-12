@@ -37,14 +37,14 @@ test('O resultado precisa retornar a propriedade name do objeto e o valor', () =
 });
 test('O resultado precisa retornar o objeto igual ao objeto2', () => {
 
-    const obj = { name: "Letícia", email: "leh@gmail.com" };
-    const obj2 = { name: "Letícia", email: "leh@gmail.com" };
+    const obj = { name: 'Letícia', email: 'leh@gmail.com' };
+    const obj2 = { name: 'Letícia', email: 'leh@gmail.com' };
 
     expect(obj).toEqual(obj2);
 });
 test('O resultado precisa retornar o objeto igual ao objeto', () => {
 
-    const obj = { name: "Letícia", email: "leh@gmail.com" };
+    const obj = { name: 'Letícia', email: 'leh@gmail.com' };
 
     expect(obj).toBe(obj);
 });
