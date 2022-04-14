@@ -12,7 +12,7 @@ module.exports = {
     }
   },
 
-  development: {
+  test: {
     client: 'postgresql',
     connection: {
       database: 'financial',
@@ -29,7 +29,7 @@ module.exports = {
     }
   },
 
-  production: {
+  development: {
     client: 'postgresql',
     connection: {
       database: 'financial',
