@@ -4,16 +4,6 @@ const app = require('../../src/app');
 const email = `${Date.now()}@gmail.com`;
 
 describe('Teste de usuário', () => {
-    /*  beforeAll(async () => {
-         await connect();
-     });
-     afterAll(async () => {
-         await setupDbDisconnect();
-     });
-     afterEach(async () => {
-         await setupCollectionClean();
-     }); */
-
     test('Deve listar todos os usuários', async () => {
         const result = await request(app).get('/users');
         expect(result.status).toBe(200);
