@@ -23,3 +23,6 @@ test('Deve listar todas as contas', () => {
             expect(res.body.length).toBeGreaterThan(0);
         });
 });
+test('Deve retornar uma conta por id', () => {
+
+});
